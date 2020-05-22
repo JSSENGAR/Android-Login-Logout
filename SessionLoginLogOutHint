@@ -1,0 +1,20 @@
+Session Hindt For Login Logout
+
+1. Login
+
+								SharedPreferences sprf = getSharedPreferences("user_details",MODE_PRIVATE);
+                                SharedPreferences.Editor editor = sprf.edit();                                
+                                editor.putString("empname",ename);
+                                editor.commit();
+								
+
+2.                                  
+	Retrieving 
+								SharedPreferences  sprf = getSharedPreferences("user_details",MODE_PRIVATE);
+							    empn=sprf.getString("empname",null);                                								
+3. 
+	Logout
+								SharedPreferences.Editor editor = sprf.edit();
+								editor.clear();
+								editor.commit();
+                            
